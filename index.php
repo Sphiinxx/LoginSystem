@@ -9,10 +9,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>YAY</title>
+        <title>Logged In</title>
     </head>
     <body>
-        <h1>YAY TEST</h1>
+        <h1>Logged In</h1>
         </form>
     </body>
 </html>
