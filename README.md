@@ -9,5 +9,8 @@ It uses SHA-256 hash ecryption to ecrypt the passwords salted with the username.
 * Passwords hashed 1000 times and salted with the username.
 * Protects against most types of attacks.
 
-### Version
-0.1
+### Versions
+**0.1 - 5/2/2016**
+```sh
+- Release Version
+```
