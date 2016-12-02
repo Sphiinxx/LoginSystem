@@ -2,17 +2,17 @@
     session_start();
 
     if (isset($_POST['username']) && isset($_POST['password'])) {
-        include_once("db.php");
-        $username = mysqli_real_escape_string($sqlcon, $_POST['username']);
+        include_once("db_connection.php");
+        $username = mysqli_real_escape_string($sql_connection, $_POST['username']);
         $username = strtoupper($username);
-        $password = mysqli_real_escape_string($sqlcon, $_POST['password']);
+        $password = mysqli_real_escape_string($sql_connection, $_POST['password']);
 
         for ($i = 0; $i < 1000; $i++) {
             $password = hash(sha512, $password . $username);
         }
 
         $userQuery = "SELECT * FROM users WHERE username = '" . $username . "' LIMIT 1";
-        $user = mysqli_query($sqlcon, $userQuery);
+        $user = mysqli_query($sql_connection, $userQuery);
 
         if (mysqli_num_rows($user) > 0) {
             $user = mysqli_fetch_assoc($user);
