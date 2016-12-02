@@ -10,6 +10,10 @@ It uses SHA-256 Cryptographic hash to generate a unique signature salting the pa
 * Protects against most types of attacks.
 
 ### Versions
+**0.2 - 12/2/2016**
+```sh
+- Minor changes.
+```
 **0.1 - 5/2/2016**
 ```sh
 - Release Version
